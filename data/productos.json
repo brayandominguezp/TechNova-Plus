@@ -92,7 +92,7 @@
     "marca": "Apple",
     "precio": 249,
     "descripcion": "Auriculares inalámbricos diseñados para escuchar música, disfrutar videos y atender llamadas con comodidad.",
-    "imagen": "./images/tarjetas-productos/pro3.jpg"
+    "imagen": "../images/tarjetas-productos/pro3.jpg"
 },
 {
     "nombre":"AirPods Max 2",
@@ -100,7 +100,7 @@
     "marca": "Apple",
     "precio": 579,
     "descripcion": "Auriculares de diadema que combinan un diseño elegante con comodidad para disfrutar de tu musica y contenido favorito.",
-    "imagen": "./images/tarjetas-productos/max2.jpg"
+    "imagen": "../images/tarjetas-productos/max2.jpg"
 },
 {
     "nombre":"Raton inalambrico",
@@ -108,7 +108,7 @@
     "marca": "Otras marcas",
     "precio": 115,
     "descripcion": "Control preciso y libertad de movimiento sin cables, ideal para completar tu espacio de trabajo o estudio.",
-    "imagen": "./images/tarjetas-productos/raton.jpg"
+    "imagen": "../images/tarjetas-productos/raton.jpg"
 },
 {
     "nombre":"Teclado inalambrico",
@@ -116,6 +116,6 @@
     "marca": "Otras marcas",
     "precio": 130,
     "descripcion": "Escribe con comodidad y mantén tu escritorio ordenado gracias a su diseño sin cables, perfecto para trabajar o estudiar.",
-    "imagen": "./images/tarjetas-productos/teclado.jpg"
+    "imagen": "../images/tarjetas-productos/teclado.jpg"
 }
 ]
