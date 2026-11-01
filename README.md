@@ -13,7 +13,7 @@ Proyecto final de desarrollo web.
 ## Enlaces del proyecto
 
 Repositorio GitHub:
-PENDIENTE
+https://github.com/brayandominguezp/TechNova-Plus
 
 Página web GitHub Pages:
-PENDIENTE
+https://brayandominguezp.github.io/TechNova-Plus/views/productos.html
