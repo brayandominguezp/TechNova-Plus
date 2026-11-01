@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <title>Presupuesto</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <a href="../index.html"> <img src="../images/image.png" alt="Logo" class="logo linea"></a>
+            <a class="link linea" href="../index.html">Principal</a>
+            <a class="link linea" href="../views/productos.html">Productos</a>
+            <a class="link linea active" href="#">Presupuesto</a>
+            <a class="contacto linea" href="../views/contacto.html">Contacto</a>
+        </div>
+    </header>
+    <main>
+        <div class="pres-uno">
+            <div id="soli"><h2>Solicita tu presupuesto</h2> </div>
+            <div id="text">Contáctanos y cuéntanos qué necesitas. Nuestro equipo de profesionales te asesorará para encontrar la solución que mejor se adapte a tus necesidades.
+            </div>
+        </div>
+        <div class="gen-pres">
+            <div class="pres-for">
+                <h2> Presupuesto</h2>
+                <form id="formu" name="formu" action="https://formsubmit.co/brayan.dominguezp@gmail.com" method="post" target="_self">
+                    <ul>
+                        <li>
+                            <label for="name"> Nombre: </label>
+                            <input type="text" name="name" id="name" placeholder="Nombre (obligatorio)" pattern="[A-Z a-z]{3,25}" title="Escriba solo letras entre 3 y 25 caracteres" required>
+                        </li>
+                        <li>
+                            <label for="apellidos"> Apellidos: </label>
+                            <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos (obligatorio)" pattern="[A-Z a-zÁÉÍÓÚaéíóúÑñ]{3,25}" maxlength="40" title="Escriba sus apellidos usando solo letras entre 3 y 40 caracteres" required>
+                        </li>
+                        <li>
+                            <label for="correo"> E-mail: </label>
+                            <input type="text" name="correo" id="correo" placeholder="Dirección@correo.com (obligatorio)" pattern="[a-zA-Z0-9_-.]+@[a-z0-9.-_]+\.[a-z]{2,4}" title="Escriba su correo electrónico" required>
+                        </li>
+                        <li>
+                            <label for="tel"> Teléfono: </label>
+                            <input type="text" name="tel" id="tel" placeholder="Teléfono (obligatorio)" pattern="[0-9]{9}" title="Escriba solo 9 numeros de su telefono movil" required>
+                        </li>
+                        <li>
+                            <label for="producto"> Producto o servicio: </label>
+                            <select name="producto" id="producto" >
+                                <option value="Smartphones">Smartphones</option>
+                                <option value="Portatiles">Portátiles</option>
+                                <option value="Ordenadores">Ordenadores</option>
+                                <option value="Auriculares">Auriculares</option>
+                                <option value="Accesorios">Accesorios</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="plazo"> Plazo de entrega: </label>
+                            <select name="plazo" id="plazo">
+                                <option value="1">30 días</option>
+                                <option value="2">60 días</option>
+                                <option value="3">90 días</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label> Opciones adicionales:</label>
+                            <div>
+                                <input type="checkbox" id="garantia" name="extras" value="50">
+                                <label for="garantia"> Garantía ampliada (+50 €)</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="instalacion" name="extras" value="30">
+                                <label for="instalacion"> Instalación y configuración (+30 €)</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="soporte" name="extras" value="20">
+                                <label for="soporte"> Soporte técnico (+20 €)</label>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="descripcion"> Descripción de lo que necesitas: </label>
+                            <textarea rows=4 id="descripcion" name="descripcion" placeholder="Escribe aquí tu mensaje "></textarea>
+                        </li>
+                        <!-- Checkbox de Política de Privacidad -->
+                        <li>
+                            <div class="privacidad">
+                                <input type="checkbox" id="privacidad" name="privacidad" required>
+                                <label for="privacidad">Acepto la <a href="" target="_blank">política de privacidad</a></label>
+                            </div>
+                        </li>
+                        
+                        <li class="buttons">
+                            <button type="submit" id="submitt"> SOLICITAR PRESUPUESTO</button>
+                            <button type="reset" id="resett" > BORRAR FORMULARIO</button>
+                        </li>
+                    </ul>
+                    <div id="resultado-presupuesto" aria-live="polite">
+                        <h3> Tu presupuesto</h3>
+                        <p>Precio base: <span id="precio-base"> 0€ </span></p>
+                        <p>Descuento: <span id="descuento"> 0€ </span></p>
+                        <p> Extras: <span id="precio-extras"> 0€ </span></p>
+                        <p class="total-presupuesto"> Total:  <span id="precio-total"> 0€ </span> </p>
+                    </div>
+                </form>
+            </div>
+            <div class="pres-ima">
+                <div class="ima">
+                    <h3> Promoción </h3>
+                    <a href="../views/contacto.html">
+                        <img src="../images/promos/promo-s26.jpg" alt="promos">
+                        <h2> 1764€</h2>
+                    </a>
+                </div>
+                <div class="ima">
+                    <h3> Promoción </h3>
+                    <a href="../views/contacto.html">
+                        <img src="../images/promos/promo-18max.jpg" alt="promos">
+                        <h2> 1639€</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="pie">
+            <div class="foot-up">
+                <div class="izq">
+                    <a href="../index.html"> <img src="../images/logo.PNG" alt="Logo" class="logo-footer"></a>
+                </div>
+                <div class="centro">
+                    <ul  class="list-foot">
+                        <li><h3>TechNova Plus</h3></li>
+                        <li id="lista">
+                            <a href="613669341" class="glob">
+                                <img src="../images/redes/telee.JPG" alt="telefono" class="logitos" >
+                                <h4 class="titu">Teléfono:</h4> 
+                                <p class="parrafo">613669341</p>
+                                
+                            </a>
+                        </li>
+                        <li>
+                            
+                            <a href="mailto:brayan.dominguezp@gmail.com?subject=Consulta%20sobre%20productos&body=Hola,%20quiero%20más%20información." class="glob">
+                                <img src="../images/redes/correo.webp" alt="e-mail" class="logitos" >
+                                <h4 class="titu">E-mail:</h4>
+                                <p class="parrafo">Brayan.dominguezp@gmail.com</p>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/maps/place/C.+San+Fernando,+49,+03001+Alicante/@38.342463,-0.4889284,17z/data=!3m1!4b1!4m6!3m5!1s0xd6237b3653ea463:0x8f5c2384a99febe0!8m2!3d38.342463!4d-0.4863535!16s%2Fg%2F11q2nf20kf?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D" class="glob">
+                                <img src="../images/redes/ubi.webp"     alt="Dirección" class="logitos">
+                                <h4 class="titu">Dirección:</h4> 
+                                <p class="parrafo">Calle san fernando 49, Alicante</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="redes">
+                    <ul class="list-foot">
+                        <li> <h4>Síguenos en nuestras redes: </h4></li>
+                        <li> 
+                            <a href="https://Instagram.com" class="glob">
+                                <img src="../images/redes/ig.png" alt="Instagram" class="logitos-dos"> 
+                                <p class="count">@TechNovaPlus</p>
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="https://Facebook.com" class="glob"> 
+                                <img src="../images/redes/face.png" alt="Facebook" class="logitos-dos">
+                                <p class="count">TechNova Plus</p> 
+                            </a>  
+                        </li>
+                        <li> 
+                            <a href="https://x.com" class="glob"> 
+                                <img src="../images/redes/x.png" alt="X" class="logitos-dos">
+                                <p class="count">@TechNovaPlus</p>
+                            </a>  
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-down">
+                <p >© 2026 TechNova Plus | Todos los derechos reservados | La solución siempre en tus manos.</p>
+            </div>
+        </div>
+    </footer> 
+    <script src="../js/scripts.js"></script>  
+</body>
+</html>

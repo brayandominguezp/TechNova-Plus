@@ -1,0 +1,1351 @@
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ESTILOS GENERALES  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Eliminacion de los ajustes de la pagina*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Ajustes generales de toda la pagina*/
+html, body{
+	margin:0;
+	width:100%;
+    min-height: 100%;
+}
+
+/* Ajustes generales de todo el cuerpo de la pagina*/
+body{
+    background-color: #ffffff;
+    color: #111111;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ESTILOS HEADER ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */  
+
+/* Ajuste general del header del cuerpo */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+}
+
+/* Diseño general de la cabecera */
+.head{
+    max-width: 1200px;
+    min-height: 100px;
+    margin: 0 auto;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+/* Modificacion del logo */
+.logo{
+    display: block;
+    width: 150px;
+    height: auto;
+    float: none;
+    border: none;
+    border-radius: 0;
+}
+
+/* Enlaces del menu*/
+.linea{
+    float: none;
+}
+
+
+/* Ajuste de menu */
+.link, .contacto{
+    display: inline-block;
+    margin: 0;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    color: #111111;
+    font-size: 15px;
+    text-decoration: none;
+    text-shadow: none;
+    transition:  color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Efecto de pasar el raton*/
+.link:hover, .contacto:hover{
+    color: #7900d6;
+    background-color: #f4eaff;
+}
+
+/* Creacion de boton al estar activo */
+.active{
+    color: #7900d6;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #f4eaff;
+    text-decoration: none;
+    border-bottom: 2px solid #7900d6;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ESTILOS MAIN PAGINA PRINCIPAL  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */ 
+
+/* Estilo general del div principal del main*/
+.general{
+    max-width: 1200px;
+    margin: 45px auto;
+    padding: 40px 30px;
+    background-color: #ffffff;
+}
+
+/* Diseño general del titulo*/
+.titulo{
+    text-align: center;
+    margin: 0 auto 35px;
+    max-width: 750px;
+}
+
+/* Ajuste de tamaño de letra del titulo */
+.titulo h1{
+    font-size: 46px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #111111;
+}
+
+/* Ajuste de tamaño de letra del parrafo */
+.titulo p{
+    margin-top: 12px;
+    font-size: 24px;
+    color: #7900d6;
+}
+
+/* Diseño de caja  */
+.box-uno{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    font-size: 18px;
+}
+
+/* Edicion de parrafos */
+.box-uno p{
+    flex: 1;
+    line-height: 1.8;
+    margin: 0;
+    color: #333333;
+}
+
+/* Ajuste de imagen de inicio*/
+.box-uno #compu{
+    width: 40%;
+    max-width: 420px;
+    height: auto;
+    object-fit: contain;
+}
+
+/*------ PRODUCTOS DESTACADOS ---------------*/
+
+/* Diseño general de los productos destacados*/
+.productos-destacados{
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+/* Titulo de productos destacados*/
+.productos-destacados h2{
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: #111111;
+}
+
+/* Diseño de subtitulos de productos destacados*/
+.subtitulo-productos{
+    color: #666666;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+/* Ajuste del contenedor de productos destacados*/
+.contenedor-productos{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Edicion general de las tarjetas de productos destacados*/
+.tarjeta-producto{
+    flex: 1;
+    min-width: 220px;
+    max-width: 320px;
+    padding: 25px;
+    border: 1px solid #eeeeee;
+    border-radius: 14px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* Ajuste de imagen*/
+.tarjeta-producto img{
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 18px;
+}
+
+/* Ajuste del titulo*/
+.tarjeta-producto h3{
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+/* Ajuste de la descripcion*/
+.tarjeta-producto p {
+    margin-bottom: 20px;
+    color: #555555;
+    line-height: 1.5;
+}
+
+/* Ajuste del boton*/
+.tarjeta-producto a{
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #7900d6;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* Diseño al pasar el raton por encima del boton*/
+.tarjeta-producto a:hover{
+    background-color: #5900a0;
+}
+
+/*------ NOTICIAS TECNOLOGICAS ---------------*/
+
+/* Diseño general de nuestras noticias*/
+.noticias {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px 30px;
+    background-color: #111111;
+    color: #ffffff;
+    border-radius: 14px;
+}
+
+/* Diseño del titulo*/
+.noticias h2{
+    margin-bottom: 12px;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* Diseño de la descripción*/
+.subtitulo-noticias {
+    margin-bottom: 30px;
+    color: #cccccc;
+    text-align: center;
+}
+
+/* Edicion de los div del contenedor de las noticias*/
+#contenedor-noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Diseño de las tarjetas de las noticias*/
+.tarjeta-noticia {
+    padding: 22px;
+    background-color: #202020;
+    border: 1px solid #393939;
+    border-radius: 12px;
+}
+
+/* Edicion de la categoria de las tarjetas*/
+.tarjeta-noticia span{
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #bd83ff;
+    font-size: 13px;
+}
+
+/* Edicion de los titulos de las tarjetas*/
+.tarjeta-noticia h3 {
+    margin-bottom: 12px;
+    font-size: 19px;
+}
+
+/* Edicion de los parrafos de las tarjetas*/
+.tarjeta-noticia p{
+    color: #dddddd;
+    line-height: 1.6;
+}
+
+/*------ VENTAJAS DE TECHNOVA PLUS ---------------*/
+
+/* Diseño general de nuestras ventajas*/
+.ventajas {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px 30px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+/* Diseño del titulo*/
+.ventajas h2{
+    margin-bottom: 12px;
+    font-size: 32px;
+}
+
+/* Diseño de la descripción*/
+.subtitulo-ventajas{
+    margin-bottom: 30px;
+    color: #666666;
+}
+
+/* Edicion de los div del contenedor de las ventajas*/
+.contenedor-ventajas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Diseño de las tarjetas de las ventajas*/
+.tarjeta-ventajas{
+    padding: 25px;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    background-color: #fafafa;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+/* Diseño al pasar el raton de las tarjetas de las ventajas*/
+.tarjeta-ventajas:hover{
+    transform: translateY(-4px);
+    border-color: #7900d6;
+}
+
+/* Edicion de los titulos de las tarjetas de ventajas*/
+.tarjeta-ventajas h3{
+    margin-bottom: 12px;
+    color: #7900d6;
+    font-size: 20px;
+}
+
+/* Edicion de los parrafos de las tarjetas de ventajas*/
+.tarjeta-ventajas p{
+    line-height: 1.6;
+    color: #444444;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ESTILOS MAIN PAGINA PRODUCTOS ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */ 
+
+/* Diseño general del div general*/
+.cuerpo{
+    width: 100%;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+/* Promocion del mes general*/
+.promo{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    padding: 25px;
+    margin: 0 40px 40px 40px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: #f7f7f7;
+}
+
+/* Diseño del apartado del div general */
+.mes{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* Edicion del titulo */
+#oferta{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 32px;
+    padding: 15px;
+    margin: 0 0 20px;
+    border-radius: 8px;
+}
+
+/* Ajuste de la descripcion*/
+.mes p{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 10px;
+    border: none;
+}
+
+/* Diseño del precio*/
+#precio{
+    width: fit-content;
+    margin: 20px auto ;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    text-align: center ;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Ajuste del contenedor de la imagen*/
+.enlace{
+    width: 100%;
+    height: 240px;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* Edicion de la imagen*/
+.enlace img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Ajuste del boton de compra*/
+.compra{
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    padding: 12px 24px;
+    float: none;
+    border: none;
+    border-radius: 8px;
+    background-color: #7900d6;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Ajuste del boton de compra al pasar el raton por encima*/
+.compra:hover{
+    background-color: #5900a0;
+}
+
+/* Ajuste del texto de compra*/
+.compra p{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* FILTROS DE PRODUCTOS*/
+.filtro{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+}
+
+/* Edicion general de los filtros*/
+.catego, .items, .pago{
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    text-align: center;
+    font-size: 17px;
+}
+
+/* galeria de los productos */
+.galeria-productos {
+    width: 100%;
+    margin: 30px 40px;
+    box-sizing: border-box;
+}
+
+/* Ajuste del titulo*/
+.galeria-productos h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Ajuste de la descripcion*/
+.subtitulo-galeria {
+    text-align: center;
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Diseño del div general de las tarjetas de los productos*/
+.prod{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+/* Diseño de las tarjetas de los productos*/
+.prod .tarjeta-producto{
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    min-width: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Diseño de las tarjetas de los productos al pasar el raton por encima*/
+.prod .tarjeta-producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Diseño de la imagen de las tarjetas de los productos*/
+.prod .tarjeta-producto img{
+    width: 100%;
+    max-width: 220px;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Diseño del titulo de las tarjetas de los productos*/
+.prod .tarjeta-producto h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Diseño de la descripcion de las tarjetas de los productos*/
+.prod .tarjeta-producto p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Modificacion del ultimo parrafo de las tarjetas de los productos*/
+.prod .tarjeta-producto p:last-child {
+    font-size: 22px;
+    font-weight: bold;
+    color: #6c3bc5;
+}
+
+/* ADAPTACION A MOVILES Y TABLETS */
+@media (max-width: 900px) {
+    .prod {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (max-width: 550px) {
+    .prod {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}
+
+/* ADAPTACION A MOVILES Y TABLETS */
+
+@media (max-width: 900px) {
+    .promo {
+        grid-template-columns: 1fr 1fr;
+    }
+    .filtro{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 550px) {
+    .promo{
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+    #oferta{
+        font-size: 26px;
+    }
+    .enlace{
+        height: 200px;
+    }
+    .galeria-productos h2{
+        font-size: 26px;
+    }
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ESTILOS MAIN PAGINA PRESUPUESTOS ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */ 
+
+/* Ajuste general del  primer div */
+.pres-uno{
+    width: 100%;
+    margin-top: 40px;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+/* Diseño de la caja del titulo*/
+#soli{
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Modificacion del titulo */
+#soli h2{
+    margin: 0;
+    font-size: 30px;
+    color: #6c3bc5;
+}
+
+/* Modificacion del texto */
+#text{
+    max-width: 850px;
+    margin: 20px auto 0;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Ajuste general del presupuesto*/
+.gen-pres{
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(250px, 1fr);
+    align-items: start;
+    gap: 25px;
+    width: 100%;
+    margin: 35px 0;
+    box-sizing: border-box;
+}
+
+/* Diseño del apartado de los datos del cliente*/
+.pres-for{
+    min-width: 0;
+    margin: 0;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* Titulo del presupuesto*/
+.pres-for > h2{
+    margin: 0 0 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #6c3bc5;
+    text-align: center;
+    font-size: 28px;
+}
+
+/* Diseño del formulario general*/
+#formu{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Eliminacion de los ajustes de la lista principal */
+#formu ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* Modificacion de las listas del formulario */
+.pres-for li{
+    display: flex ;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+}
+
+/* Ajustes de los label del formulario*/
+.pres-for li label{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    white-space: normal;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Estilos de los campos de texto, áereas de texto y listas desplegables*/
+.pres-for li input:not([type="checkbox"]), .pres-for li textarea , .pres-for li select{
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+/* Edicion de los campos cuando el usuario los selecciona*/
+.pres-for li input:focus, .pres-for li textarea:focus, .pres-for li select:focus{
+    outline: 2px solid #6c3bc5;
+    outline-offset: 1px;
+}
+
+/* Ajuste del apartado de la descripción para cambiar la altura*/
+.pres-for li textarea{
+    resize: vertical;
+}
+
+/* Diseño de las opciones adicionales*/
+.pres-for li div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pres-for li input[type="checkbox"], .privacidad input[type="checkbox"]{
+    width: 17px;
+    height: 17px;
+    margin: 0;
+    accent-color: #6c3bc5;
+    flex-shrink: 0;
+}
+
+/* Ajuste de tamaño del label de opciones adicionales*/
+.pres-for li div label{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Edicion general de la privacidad*/
+.privacidad{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 15px 0 20px;
+    font-size: 14px;
+}
+
+/* Edicion del label de privacidad*/
+.privacidad label{
+    line-height: 1.5;
+}
+
+/* Edicion del texto del link de privacidad*/
+.privacidad a{
+    color: #6c3bc5;
+}
+
+/* Modificacion general de los botones de privacidad*/
+.buttons{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px !important; 
+}
+
+/* Arreglo de botones*/
+#submitt , #resett {
+    position: static;
+    float: none;
+    flex: 1 1 180px;
+    width: auto;
+    min-height: 44px;
+    margin: 0;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Modificacion del texto de solicitud de presupuesto*/
+#submitt{
+    background-color: #6c3bc5;
+    color: #fff;
+}
+
+/* Modificacion del texto al pasar por encima de solicitud de presupuesto*/
+#submitt:hover{
+    background-color: #5429a0;
+}
+
+/* Modificacion del texto de borrar el formulario*/
+#resett{
+    background-color: #eee;
+    color: #222;
+}
+
+/* Modificacion del texto al pasar por encima de borrar el formulario*/
+#resset:hover{
+    background-color: #ddd;
+}
+
+/* RESULTADO DEL PRESUPUESTO*/
+#resultado-presupuesto{
+    margin-top: 25px;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    background-color: #f8f6fc;
+}
+
+/* Modificacion del titulo del presupuesto total*/
+#resultado-presupuesto h3{
+    margin:  0 0 15px;
+    color: #6c3bc5;
+    font-size: 22px;
+}
+
+/* Modificacion del parrafo del presupuesto total*/
+#resultado-presupuesto p{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin:  10px 0;
+    font-size: 15px;
+}
+
+/* Ajuste general del resultado y total del presupuesto*/
+#resultado-presupuesto .total-presupuesto{
+    padding-top: 12px;
+    border-top: 1px solid #ddd;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* TARJETAS PROMOCIONALES*/
+/* Modificaion general de las promociones alternativas*/
+.pres-ima{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 0;
+    margin: 0;
+}
+
+/* Ajuste del apartado de cada promocion*/
+.ima{
+    width: 100%;
+    min-width: 0;
+    min-height: 250px;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* Titulo de las promociones alternativas*/
+.ima h3{
+    margin: 0 0 15px;
+    font-size: 22px;
+}
+
+/* Imagenes de las promociones alternativas*/
+.ima img{
+    display: block;
+    max-width: 100%;
+    height: 120px;
+    object-fit: contain;
+    margin: 15px auto;
+}
+
+/* Ajuste del precio de las promociones alternativos*/
+.ima h2{
+    margin: 15px 0 0;
+    color: #6c3bc5;
+    font-size: 26px;
+}
+
+/* ADAPTACION A TABLETS Y MOVILES */
+@media (max-width: 900px){
+    .gen-pres{
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .pres-ima{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+/* ADAPTACION A TABLETS Y MOVILES */
+@media (max-width: 550px){
+    .pres-uno{
+        padding: 15px;
+    }
+    #soli h2{
+        font-size: 24px;
+    }
+    #text{
+        font-size: 16px;
+    }
+    .pres-for{
+        padding: 16px;
+    }
+    .pres-for > h2{
+        font-size: 24px;
+    }
+    .pres-ima{
+        grid-template-columns: minmax(0, 1fr);
+    }
+    #resultado-presupuesto{
+        padding: 14px;
+    }
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ESTILOS MAIN CONTACTO ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */ 
+
+/* Ajuste del div principal*/
+#div_principal{
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+/* Ajuste de la informacion de contacto en general*/
+.contactanos{
+    border: 1px solid #7900d6;
+    height: auto;
+    border-radius: 10px;
+    background-color: transparent;
+    margin: 30px auto 30px ;
+    width: 900px;
+}
+
+/* Ajuste del titulo de la informacion de contacto*/
+.contactanos h1{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    background-color: #000000;
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Diseño de parte derecha de la info del contacto */
+.derecha{
+    position: absolute;
+    margin-left: 500px;
+    width: 450px;
+}
+
+/* Modificacion del formulario*/
+#formudos{
+    width: 380px;
+}
+
+/* Modificacion del titulo de la derecha */
+.ulist h2{
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 30px;
+    text-align: center;
+    margin: 40px 90px 40px 30px;
+    padding: 10px;
+}
+
+/* Quitamos los puntos de lista */
+.ulist li{
+    list-style: none;
+}
+
+/* Ajuste de formulario */
+.derecha input{
+    margin-bottom: 45px;
+}
+
+/* Nombre */
+.derecha #name{
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0);
+    color: #000000;
+    padding: 8px;
+    background-color: transparent;
+    width: 300px;
+}
+
+/* Correo electronico */
+.derecha #email{
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0);
+    color: #000000;
+    padding: 8px;
+    background-color: transparent;
+    width: 300px;
+}
+
+/* Asunto */
+.derecha #asunto{
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0);
+    color: #000000;
+    padding: 8px;
+    background-color: transparent;
+    width: 300px;
+}
+
+/* Mensaje */
+.derecha #mesagge{
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.941);
+    color: #000000;
+    padding: 8px;
+    background-color: transparent;
+    width: 300px;
+}
+
+/* Modificaion de la politica de privacidad de la derecha */
+.ulist .privacidad{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+/* Boton de envio de mensaje */
+.derecha button{
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+    border-radius: 8px;
+    padding-inline: 30px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 0px;
+    margin-left: 60px;
+    background: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+/* Edicion al pasar el mouse encima */
+.derecha button:hover{
+    color: #2c9ac9;
+    cursor: pointer;
+}
+
+/* Diseño de parte izquierda de la info del contacto */
+.izquierda{
+    border-right: 1px solid #000000;
+    position: relative;
+    margin-right: 450px;
+    padding: 15px;
+}
+
+/* Titulos de la izquierda */
+.izquierda h2{
+    font-size: 30px;
+    margin: 0%;
+    padding-left: 15px;
+}
+
+/* Imagen logo central izquierda */
+#logo-central{
+    margin: 20px;
+    margin-left: 80px;
+    border-radius: 8px;
+}
+
+/* Imagenes de la izquierda */
+.izquierda .redes-min img{
+    margin-top: 10px;
+    margin-left: 4px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+/* Ajuste de logo de redes*/
+#igg{
+    margin: 0px 40px 20px 40px;
+}
+
+/* Parrafos de la izquierda */
+.izquierda p{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    text-align: left;
+    font-size: 20px;
+    border-bottom: 1px solid grey;
+}
+
+/* Links de la izquierda */
+.izquierda a{
+    font-size: 15px;
+}
+
+/* Modificacion al pasar el mouse encima del link */
+.izquierda a:hover{
+    color:#3665d4;
+}
+
+/* Modificacion de los logos de contacto */
+.logos-cen{
+    padding-left: 30px;
+    margin: 20px 20px 20px 20px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 30px;
+    text-decoration: none;
+}
+
+/* Separacion de logos de los links */
+.icono{
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.icono >a{
+    text-decoration: none;
+    background-color: red;
+}
+
+/* Edicion de las redes sociales a la izquierda */
+.redes-min h2{
+    margin-bottom: 10px;
+}
+
+/* Modificacion de los logos de las redes */
+.redes-min div{
+    margin-left: 80px;
+}
+.redes-min img{
+    border: 1px solid ;
+    align-items: center;
+    margin-left: 20px;
+}
+
+/* Modificacion de la parte de la ubicacion */
+.maps{
+    border: 1px solid grey;
+    border-radius: 12px;
+    width: 1100px;
+    margin: auto;
+}
+/* Titulo del mapa */
+.maps h1{
+    padding: 10px;
+    margin-left: 25px;
+}
+
+/* Diseño del mapa */
+#map{
+    border: 1px solid rebeccapurple;
+    border-radius: 8px;
+    width: 95%;
+    margin: auto;
+    height: 400px;
+}
+
+/* Ajuste del texto debajo de la imagen de ubicacion */
+.maps h2{
+    margin-top: 20px;
+    border-top: 1px solid grey;
+    border-radius: 0%;
+    padding-right: 70px;
+    padding-left: 20px;
+    padding-top: 6px;
+}
+
+/* Edicion del boton de ubicacion*/
+#btn-ubicacion{
+    display: inline-block;
+    padding: 10px 18px;
+    margin-top: 10px;
+    margin-left: 40px;
+    background-color: #7900d6;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* Diseño al pasar el raton encima del boton*/
+#btn-ubicacion:hover{
+    background-color: #5900a0;
+}
+
+/* Diseño del texto abajo del boton*/
+#estado-ubicacion{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    border-top: 1px solid gray;
+    border-radius: 12px;
+    width: 420px;
+    font-size: 13px;
+    color: #555555;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ESTILOS FOOTER ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */ 
+
+/* Ajustes generales del footer*/
+.pie{
+    margin-top: 60px;
+    padding: 35px 24px 15px;
+    background-color: #111111;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+/* Diseño de la parte superior del footer*/
+.foot-up{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Edicion del logo del footer */
+.izq{
+    flex: 1;
+    min-width: 150px;
+}
+
+/* Desarrollo del logo del footer*/
+.logo-footer{
+    display: block;
+    width: 140px;
+    height: auto;
+    margin: 10px auto;
+    border: none ;
+    border-radius: 8px;
+}
+
+/* Edicion parte central del footer */
+.centro, .redes{
+    flex: 1;
+    min-width: 220px;
+}
+
+/* Eliminacion del estilo de la lista*/
+.list-foot{
+    list-style: none;
+}
+
+/* Ajuste de titulo */
+.list-foot h3{
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+
+/* Ajuste de titulo*/
+.list-foot h4{
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+/* Diseño general de los links */
+.glob{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0;
+    color: #eeeeee;
+    text-decoration: none;
+    text-align: left;
+}
+
+/* Edicion al pasar el mouse encima del texto*/
+.glob:hover {
+    color: #bd83ff;
+}
+
+/* Edicion del tamaño y border de los logos */
+.logitos{
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    margin-bottom: 0px;
+    padding-bottom: 14px;
+}
+
+/* Ajuste de los logos de redes */
+.logitos-dos{
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.titu{
+    margin-top: 0px;
+    width: 80px;
+}
+
+.parrafo{
+    padding-bottom: 17px;
+}
+
+/* Ajuste de los textos del footer */
+.count{
+    width: auto;
+    margin: 0;
+    float: none;
+    text-align: left;
+}
+
+
+
+/* Diseño de la parte inferior del footer*/
+.foot-down{
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px solid #555555;
+    text-align: center;
+}
+
+/* Ajuste del parrafo del footer inferior*/
+.foot-down p{
+    width: auto;
+    margin: 0;
+    padding: 10px 0;
+    color: #bbbbbb;
+    font-size: 13px;
+}

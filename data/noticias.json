@@ -1,0 +1,17 @@
+[
+    {
+        "titulo": "La inteligencia artificial sigue avanzando",
+        "descripcion": "Las nuevas herramientas de inteligencia artificial amplían las posibilidades de trabajo, estudio y creatividad.",
+        "categoria": "Inteligencia artificial"
+    },
+    {
+        "titulo": "Los smartphones incorporan nuevas funciones",
+        "descripcion": "Los fabricantes continuan mejorando las camaras, el rendimiento y la autonomia de sus dispositivos.",
+        "categoria": "Moviles"
+    },
+    {
+        "titulo": "La ciberseguridad gana importancia ",
+        "descripcion": "Proteger las cuentas, los dispositivos y los datos personales es cada vez mas importante en internet.",
+        "categoria": "Ciberseguridad"
+    }
+]

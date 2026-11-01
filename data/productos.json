@@ -1,0 +1,121 @@
+[{
+    "nombre":"iphone 18 Pro Max",
+    "categoria": "Smartphones",
+    "marca": "Apple",
+    "precio": 1619,
+    "descripcion": "Disfruta de una experiencia premium con una gran pantalla, cámaras avanzadas y potencia para tus tareas más exigentes.",
+    "imagen": "../images/tarjetas-productos/promax.jpg"
+},
+{
+    "nombre":"Iphone 18 Pro ",
+    "categoria": "Smartphones", 
+    "marca": "Apple", 
+    "precio": 1469, 
+    "descripcion": "Rendimiento y elegancia en un diseño versátil, ideal para capturar tus mejores momentos y disfrutar de tus aplicaciones favoritas.", 
+    "imagen": "../images/tarjetas-productos/proo.jpg"
+},
+{
+    "nombre":"Iphone Duo ",
+    "categoria": "Smartphones",
+    "marca": "Apple",
+    "precio": 2339,
+    "descripcion": "Un concepto de smartphone plegable que apuesta por la versatilidad y una experiencia de pantalla adaptable.",
+    "imagen": "../images/tarjetas-productos/duo.jpg"
+},
+{
+    "nombre":"Samsung Galaxy S26 Ultra",
+    "categoria": "Smartphones",
+    "marca": "Samsung",
+    "precio": 1446,
+    "descripcion": "Tecnología de alto nivel, herramientas inteligentes y un sistema de camara pensado para capturar cada detalle.",
+    "imagen": "../images/tarjetas-productos/ultra.jpg"
+},
+{
+    "nombre":"Samsung Galaxy S26+",
+    "categoria": "Smartphones",
+    "marca": "Samsung",
+    "precio": 1149,
+    "descripcion": "Una pantalla amplia y un diseño moderno que ofrecen una experiencia cómoda para trabajar, jugar y disfrutar de contenido multimedia.",
+    "imagen": "../images/tarjetas-productos/26+.jpg"
+},
+{
+    "nombre":"Samsung Galaxy Z Fold8 Ultra",
+    "categoria": "Smartphones",
+    "marca": "Samsung",
+    "precio": 1999,
+    "descripcion": "Un diseño plegable que amplía tu espacio de trabajo y facilita la multitarea, la lectura y el entrenamiento.",
+    "imagen": "../images/tarjetas-productos/fold8.jpg"
+},
+{
+    "nombre":"MacBook Neo",
+    "categoria": "Portatiles",
+    "marca": "Apple",
+    "precio": 799,
+    "descripcion": "Un portátil ligero y moderno, perfecto para estudiar, navegar por internet y realizar tus tareas del día a día.",
+    "imagen": "../images/tarjetas-productos/neo.jpg"
+},
+{
+    "nombre":"MacBook Air 15´",
+    "categoria": "Portatiles",
+    "marca": "Apple",
+    "precio": 1730,
+    "descripcion": "Una pantalla amplia en un portatil fino y ligero, ideal para trabajar, estudiar y llevar tus proyectos contigo.",
+    "imagen": "../images/tarjetas-productos/air15.jpg"
+},
+{
+    "nombre":"MacBook Pro 16´",
+    "categoria": "Portatiles",
+    "marca": "Apple",
+    "precio": 3449,
+    "descripcion": "Diseñado para tareas exigentes, edición multimedia y proyectos profesionales que necesitan potencia y una pantalla de gran tamaño.",
+    "imagen": "../images/tarjetas-productos/pro16.jpg"
+},
+{
+    "nombre":"Ordenadores",
+    "categoria": "Ordenadores",
+    "marca": "Otras marcas",
+    "precio": 1200,
+    "descripcion": "Equipos versátiles para el hogar, los estudios y/o el trabajo, con opciones adaptadas a distintas necesidades informaticas.",
+    "imagen": "../images/tarjetas-productos/ordenadorr.jpg"
+},
+{
+    "nombre":"AirPods 5",
+    "categoria": "Auriculares",
+    "marca": "Apple",
+    "precio": 149,
+    "descripcion": "Auriculares con ajuste intraauricular, pensados para una escucha envolvente y una experiencias mas inmersiva.",
+    "imagen": "../images/tarjetas-productos/pods5.PNG"
+},
+{
+    "nombre":"AirPods Pro 3",
+    "categoria": "Auriculares",
+    "marca": "Apple",
+    "precio": 249,
+    "descripcion": "Auriculares inalámbricos diseñados para escuchar música, disfrutar videos y atender llamadas con comodidad.",
+    "imagen": "../images/tarjetas-productos/pro3.jpg"
+},
+{
+    "nombre":"AirPods Max 2",
+    "categoria": "Auriculares",
+    "marca": "Apple",
+    "precio": 579,
+    "descripcion": "Auriculares de diadema que combinan un diseño elegante con comodidad para disfrutar de tu musica y contenido favorito.",
+    "imagen": "../images/tarjetas-productos/max2.jpg"
+},
+{
+    "nombre":"Raton inalambrico",
+    "categoria": "Accesorios",
+    "marca": "Otras marcas",
+    "precio": 115,
+    "descripcion": "Control preciso y libertad de movimiento sin cables, ideal para completar tu espacio de trabajo o estudio.",
+    "imagen": "../images/tarjetas-productos/raton.jpg"
+},
+{
+    "nombre":"Teclado inalambrico",
+    "categoria": "Accesorios",
+    "marca": "Otras marcas",
+    "precio": 130,
+    "descripcion": "Escribe con comodidad y mantén tu escritorio ordenado gracias a su diseño sin cables, perfecto para trabajar o estudiar.",
+    "imagen": "../images/tarjetas-productos/teclado.jpg"
+}
+]

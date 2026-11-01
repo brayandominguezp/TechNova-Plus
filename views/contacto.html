@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <!-- LINKS MAPA  -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- TITULO PAGINA -->
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <a href="../index.html"><img src="../images/image.png" alt="Logo" class="logo linea"></a>
+            <a class="link linea" href="../index.html">Principal</a>
+            <a class="link linea" href="../views/productos.html">Productos</a>
+            <a class="link linea" href="../views/presupuesto.html">Presupuesto</a>
+            <a class="contacto linea active" href="#">Contacto</a>
+        </div>
+    </header>
+    <main>
+        <div id="div_principal">
+            <article>
+                <div class="contactanos">
+                    <h1> Contacto </h1>
+                    <div class="derecha">
+                        <form id="formudos" name="formudos" action="https://formsubmit.co/brayan.dominguezp@gmail.com" method="post" target="_self">
+                            <ul class="ulist">
+                                <li>
+                                    <h2> Contáctanos </h2>
+                                </li>
+                                <li>
+                                    <input type="text" id="name" name="name" placeholder="Nombre completo " pattern="[A-Z a-z]{3,25}" title="Escriba solo letras entre 3 y 25 caracteres" required>
+                                </li>
+                                <li>
+                                    <input type="email" name="email" id="email" placeholder="Direccion@correo.com (obligatorio)" pattern="[a-zA-Z0-9_-.]+@[a-z0-9.-_]+\.[a-z]{2,4}" title="Escriba su correo electrónico" required>
+                                </li>
+                                <li>
+                                    <input type="text" id="asunto" name="asunto" placeholder=" Asunto (opcional) " pattern="[A-Z a-z]{3,25}" title="Escriba el asunto " >
+                                </li>
+                                <li>
+                                    <textarea rows=8 id="mesagge" name="mesagge" placeholder="Escriba aquí su mensaje "></textarea>
+                                </li>
+                                <!-- Checkbox de Política de Privacidad -->
+                                <li class="privacidad">
+                                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                                    <label for="privacidad">
+                                    Acepto la <a href="../views/privacidad.html" target="_blank">Política de Privacidad</a>
+                                    </label>
+                                </li>
+                                <li>
+                                    <button type="submit" > Enviar mensaje </button>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="izquierda">
+                        <h2> Información de contacto </h2>
+                        <img src="../images/logo.PNG" alt="logo" id="logo-central" width="200">
+                        <h2> ¿Tienes alguna consulta?</h2>
+                        <p> Escribenos y te ayudaremos a encontrar la mejor solución. </p>
+                        <div class="logos-cen">
+                            <a href="https://www.whatsapp.com"><img src="../images/redes/tel.png" alt="teléfono" class="icono" width="20" height="20"> + 34 613 669 341 </a><br>
+                            <a href="mailto:brayan.dominguezp@gmail.com?subject=Consulta%20sobre%20productos&body=Hola,%20quiero%20más%20información." ><img src="../images/redes/email.png" class="icono"  alt="correo" width="20" height="20"> Brayan.dominguezp@gmail.com </a><br>
+                            <a href="https://www.google.com/maps/place/C.+San+Fernando,+49,+03001+Alicante/@38.342463,-0.4889284,17z/data=!3m1!4b1!4m6!3m5!1s0xd6237b3653ea463:0x8f5c2384a99febe0!8m2!3d38.342463!4d-0.4863535!16s%2Fg%2F11q2nf20kf?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D"><img src="../images/redes/ubicacion.png" class="icono"  alt="ubicación"  width="20" height="20"> Calle San Fernando 49 </a>
+                        </div>
+                        <div class="redes-min">
+                            <h2> Síguenos en</h2>
+                            <div>
+                                <a href="https://www.instagram.com"><img src="../images/redes/ig.png" alt="Instagram" width="50" height="50"></a>
+                                <a href="https://www.facebook.com"><img src="../images/redes/face.png" alt="Facebook" width="50" height="50" id="igg"></a>
+                                <a href="https://www.x.com"><img src="../images/redes/x.png" alt="X " width="50" height="50"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <br>
+            <article class="maps">
+                <div>
+                    <h1> Nuestra ubicación</h1>
+                </div>
+                <div id="map"></div>
+                <div>
+                    <h2> Calle San Fernando 49, 03001 Alicante</h2>
+                </div>
+                <div class="controles-mapa">
+                    <button type="button" id="btn-ubicacion">Usar mi ubicación</button>
+                    <p id="estado-ubicacion" aria-live="polite">Pulsa el botón para compartir tu ubicación y calcular la ruta hasta TechNova Plus.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="pie">
+            <div class="foot-up">
+                <div class="izq">
+                    <a href="../index.html"> <img src="../images/logo.PNG" alt="Logo" class="logo-footer"></a>
+                </div>
+                <div class="centro">
+                    <ul  class="list-foot">
+                        <li><h3>TechNova Plus</h3></li>
+                        <li id="lista">
+                            <a href="https://wa.me/613669341" class="glob">
+                                <img src="../images/redes/telee.JPG" alt="teléfono" class="logitos" >
+                                <h4 class="titu">Telefono:</h4> 
+                                <p class="parrafo">613669341</p>
+                                
+                            </a>
+                        </li>
+                        <li>
+                            
+                            <a href="mailto:brayan.dominguezp@gmail.com?subject=Consulta%20sobre%20productos&body=Hola,%20quiero%20más%20información." class="glob">
+                                <img src="../images/redes/correo.webp" alt="e-mail" class="logitos" >
+                                <h4 class="titu">E-mail:</h4>
+                                <p class="parrafo">Brayan.dominguezp@gmail.com</p>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/maps/place/C.+San+Fernando,+49,+03001+Alicante/@38.342463,-0.4889284,17z/data=!3m1!4b1!4m6!3m5!1s0xd6237b3653ea463:0x8f5c2384a99febe0!8m2!3d38.342463!4d-0.4863535!16s%2Fg%2F11q2nf20kf?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D" class="glob">
+                                <img src="../images/redes/ubi.webp"     alt="Direccion" class="logitos" >
+                                <h4 class="titu">Dirección:</h4> 
+                                <p class="parrafo">Calle San Fernando 49, Alicante</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="redes">
+                    <ul class="list-foot">
+                        <li> <h4>Siguenos en nuestras redes: </h4></li>
+                        <li> 
+                            <a href="https://Instagram.com" class="glob">
+                                <img src="../images/redes/ig.png" alt="Instagram" class="logitos-dos"> 
+                                <p class="count">@TechNovaPlus</p>
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="https://Facebook.com" class="glob"> 
+                                <img src="../images/redes/face.png" alt="Facebook" class="logitos-dos">
+                                <p class="count">TechNova Plus</p>
+                            </a>  
+                        </li>
+                        <li> 
+                            <a href="https://x.com" class="glob"> 
+                                <img src="../images/redes/x.png" alt="X" class="logitos-dos">
+                                <p class="count">@TechNovaPlus</p>
+                            </a>  
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-down">
+                <p >© 2026 TechNova Plus | Todos los derechos reservados | La solución siempre en tus manos.</p>
+            </div>
+        </div>
+    </footer>   
+    <!-- JAVASCRIPT -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
