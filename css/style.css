@@ -19,6 +19,9 @@ body{
     background-color: #ffffff;
     color: #111111;
     font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 
@@ -95,6 +98,9 @@ header {
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ESTILOS MAIN PAGINA PRINCIPAL  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */ 
 
 /* Estilo general del div principal del main*/
+main{
+    flex: 1;
+}
 .general{
     max-width: 1200px;
     margin: 45px auto;
