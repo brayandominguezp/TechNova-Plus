@@ -16,4 +16,5 @@ Repositorio GitHub:
 https://github.com/brayandominguezp/TechNova-Plus
 
 Página web GitHub Pages:
-https://brayandominguezp.github.io/TechNova-Plus/views/productos.html
+https://brayandominguezp.github.io/TechNova-Plus/index.html
+
