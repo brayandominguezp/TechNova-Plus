@@ -139,11 +139,15 @@ main{
     font-size: 18px;
 }
 
+/* Contenedor de textos*/
+.texto-inicio{
+    flex: 1;
+}
+
 /* Edicion de parrafos */
 .box-uno p{
-    flex: 1;
     line-height: 1.8;
-    margin: 0;
+    margin-bottom:  15px;
     color: #333333;
 }
 
@@ -1142,18 +1146,30 @@ main{
 /* Modificacion de los logos de contacto */
 .logos-cen{
     padding-left: 30px;
-    margin: 20px 20px 20px 20px;
+    margin: 20px ;
     border-bottom: 1px solid grey;
     padding-bottom: 30px;
+}
+
+/* Separacion de los enlaces */
+.logos-cen a{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 15px;
     text-decoration: none;
 }
 
 /* Separacion de logos de los links */
 .icono{
     margin-right: 20px;
-    text-decoration: none;
-	width: 20px;
+    width: 20px;
     height: 20px;
+}
+
+/* Eliminar margen del ultimo enlace*/
+.logos-cen a:last-child{
+    margin-bottom: 0;
 }
 
 .icono >a{
