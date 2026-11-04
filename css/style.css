@@ -1085,6 +1085,12 @@ main{
     padding: 15px;
 }
 
+/* Ajuste de imagen */
+.izquierda #logo-central{
+    width: 200px;
+    height: 200px;
+}
+
 /* Titulos de la izquierda */
 .izquierda h2{
     font-size: 30px;
@@ -1146,6 +1152,8 @@ main{
 .icono{
     margin-right: 20px;
     text-decoration: none;
+	width: 20px;
+    height: 20px;
 }
 
 .icono >a{
@@ -1166,6 +1174,8 @@ main{
     border: 1px solid ;
     align-items: center;
     margin-left: 20px;
+	width: 50px;
+    height: 50px;
 }
 
 /* Modificacion de la parte de la ubicacion */
