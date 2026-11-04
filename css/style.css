@@ -893,7 +893,7 @@ main{
 }
 
 /* Titulo de las promociones alternativas*/
-.ima h3{
+.ima h2{
     margin: 0 0 15px;
     font-size: 22px;
 }
@@ -908,7 +908,7 @@ main{
 }
 
 /* Ajuste del precio de las promociones alternativos*/
-.ima h2{
+.ima h3{
     margin: 15px 0 0;
     color: #6c3bc5;
     font-size: 26px;
